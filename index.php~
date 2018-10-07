@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>GPIO on Raspberry</title>
+	</head>
+	<body>
+	<?php
+	system("gpio  -g mode 18 out");
+	exec("gpio -g read 18 out, $return");
+	?>
+	
+	<button> </button>
+	</body>
+</html>
