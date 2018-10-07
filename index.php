@@ -6,12 +6,9 @@
 		<script type="text/javascript" src="ledscript.js"></script>
 	</head>
 	<body>
-	<?php
-	system("gpio  -g mode 18 out");
-	exec("gpio -g read 18 out, $return");
-	?>
 	
-	<input type="button" id='script' name="scriptbutton" value="Turn on led" onclick="turnLED()"/>
-
+		<input type="button" id='on' name="scriptButtonOn" value="Turn on led" onclick="turnLED(1)"/>
+	
+		<input type="button" id='off' name="scriptButtonOff" value="Turn off led" onclick="turnLED(0)"/>
 	</body>
 </html>
